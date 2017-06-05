@@ -147,7 +147,7 @@ EOF
 download_gcc_build_script() {
     local zeranoe_script_name=$1
     rm -f $zeranoe_script_name || exit 1
-    curl -4 https://raw.githubusercontent.com/rdp/ffmpeg-windows-build-helpers/master/patches/$zeranoe_script_name -O --fail || exit 1
+    curl -4 https://raw.githubusercontent.com/kvanbiesen/ffmpeg-windows-build-helpers/master/patches/$zeranoe_script_name -O --fail || exit 1
     chmod u+x $zeranoe_script_name
 }
 
